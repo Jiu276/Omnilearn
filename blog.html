@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Omnilearn</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Omnilearn</span>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                    <li><a href="products.html" class="nav-link">Products</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="blog-hero">
+            <div class="container">
+                <div class="blog-hero-content">
+                    <h1>Learning Insights & Reviews</h1>
+                    <p>Discover the latest trends in online education, platform reviews, and expert learning strategies</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog-content">
+            <div class="container">
+                <div class="blog-filters">
+                    <div class="search-container">
+                        <div class="search-box">
+                            <input type="text" id="search-input" placeholder="Search articles...">
+                            <button id="search-btn"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                    <div class="category-filters">
+                        <button class="category-btn active" data-category="all">All</button>
+                        <button class="category-btn" data-category="platforms">Platform Reviews</button>
+                        <button class="category-btn" data-category="tools">Learning Tools</button>
+                        <button class="category-btn" data-category="tips">Study Tips</button>
+                        <button class="category-btn" data-category="resources">Resources</button>
+                    </div>
+                </div>
+
+                <div class="blog-grid">
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=250&fit=crop" alt="Online Learning Platforms">
+                        </div>
+                        <div class="blog-content-card">
+                            <span class="card-category">Platform Reviews</span>
+                            <h3>Top 10 Online Learning Platforms in 2024</h3>
+                            <p>A comprehensive comparison of the most effective and popular online learning platforms, including Coursera, Udemy, edX, and more.</p>
+                            <div class="blog-meta">
+                                <span class="blog-date"><i class="fas fa-calendar"></i> March 15, 2024</span>
+                                <span class="read-time"><i class="fas fa-clock"></i> 8 min read</span>
+                            </div>
+                            <a href="blog-post-1.html" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&h=250&fit=crop" alt="Study Tools">
+                        </div>
+                        <div class="blog-content-card">
+                            <span class="card-category">Learning Tools</span>
+                            <h3>Essential Study Tools for Maximum Productivity</h3>
+                            <p>Discover the must-have digital tools and apps that will revolutionize your study sessions and boost your learning efficiency.</p>
+                            <div class="blog-meta">
+                                <span class="blog-date"><i class="fas fa-calendar"></i> March 12, 2024</span>
+                                <span class="read-time"><i class="fas fa-clock"></i> 6 min read</span>
+                            </div>
+                            <a href="blog-post-2.html" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=250&fit=crop" alt="Learning Techniques">
+                        </div>
+                        <div class="blog-content-card">
+                            <span class="card-category">Study Tips</span>
+                            <h3>Science-Based Learning Techniques That Actually Work</h3>
+                            <p>Explore evidence-based learning methods that improve retention, speed up comprehension, and make studying more effective.</p>
+                            <div class="blog-meta">
+                                <span class="blog-date"><i class="fas fa-calendar"></i> March 10, 2024</span>
+                                <span class="read-time"><i class="fas fa-clock"></i> 7 min read</span>
+                            </div>
+                            <a href="blog-post-3.html" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=400&h=250&fit=crop" alt="Coding Education">
+                        </div>
+                        <div class="blog-content-card">
+                            <span class="card-category">Platform Reviews</span>
+                            <h3>Best Coding Bootcamps vs. Traditional Computer Science Degrees</h3>
+                            <p>An in-depth analysis of coding bootcamps versus traditional computer science education, helping you choose the right path.</p>
+                            <div class="blog-meta">
+                                <span class="blog-date"><i class="fas fa-calendar"></i> March 8, 2024</span>
+                                <span class="read-time"><i class="fas fa-clock"></i> 10 min read</span>
+                            </div>
+                            <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1553028826-f4804a6dba3b?w=400&h=250&fit=crop" alt="Language Learning Apps">
+                        </div>
+                        <div class="blog-content-card">
+                            <span class="card-category">Tools</span>
+                            <h3>Language Learning Apps: Duolingo vs. Babbel vs. Rosetta Stone</h3>
+                            <p>Compare the most popular language learning applications and find out which one suits your learning style best.</p>
+                            <div class="blog-meta">
+                                <span class="blog-date"><i class="fas fa-calendar"></i> March 5, 2024</span>
+                                <span class="read-time"><i class="fas fa-clock"></i> 9 min read</span>
+                            </div>
+                            <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1488998527040-85054a85150e?w=400&h=250&fit=crop" alt="Remote Learning Setup">
+                        </div>
+                        <div class="blog-content-card">
+                            <span class="card-category">Tips</span>
+                            <h3>Creating the Perfect Home Study Environment</h3>
+                            <p>Learn how to design an optimal learning space at home that promotes focus, productivity, and effective studying.</p>
+                            <div class="blog-meta">
+                                <span class="blog-date"><i class="fas fa-calendar"></i> March 3, 2024</span>
+                                <span class="read-time"><i class="fas fa-clock"></i> 5 min read</span>
+                            </div>
+                            <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=400&h=250&fit=crop" alt="Online Certificates">
+                        </div>
+                        <div class="blog-content-card">
+                            <span class="card-category">Resources</span>
+                            <h3>Are Online Certificates Worth It? Industry Insights</h3>
+                            <p>Explore the real value of online certificates and certifications in today's job market and their impact on career advancement.</p>
+                            <div class="blog-meta">
+                                <span class="blog-date"><i class="fas fa-calendar"></i> March 1, 2024</span>
+                                <span class="read-time"><i class="fas fa-clock"></i> 8 min read</span>
+                            </div>
+                            <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=250&fit=crop" alt="Study Groups">
+                        </div>
+                        <div class="blog-content-card">
+                            <span class="card-category">Tips</span>
+                            <h3>The Power of Study Groups: Benefits and Best Practices</h3>
+                            <p>Discover how collaborative learning through study groups can enhance your understanding and retention of complex topics.</p>
+                            <div class="blog-meta">
+                                <span class="blog-date"><i class="fas fa-calendar"></i> February 28, 2024</span>
+                                <span class="read-time"><i class="fas fa-clock"></i> 6 min read</span>
+                            </div>
+                            <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop" alt="Data Science Learning">
+                        </div>
+                        <div class="blog-content-card">
+                            <span class="card-category">Platform Reviews</span>
+                            <h3>Best Platforms for Learning Data Science in 2024</h3>
+                            <p>A comprehensive guide to the top online platforms offering data science courses, from beginner to advanced levels.</p>
+                            <div class="blog-meta">
+                                <span class="blog-date"><i class="fas fa-calendar"></i> February 25, 2024</span>
+                                <span class="read-time"><i class="fas fa-clock"></i> 11 min read</span>
+                            </div>
+                            <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="pagination">
+                    <!-- Pagination will be generated by JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Omnilearn</span>
+                    </div>
+                    <p>Your gateway to the best educational resources and learning platforms on the web.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="blog.html?category=platforms">Platform Reviews</a></li>
+                        <li><a href="blog.html?category=tools">Learning Tools</a></li>
+                        <li><a href="blog.html?category=tips">Study Tips</a></li>
+                        <li><a href="blog.html?category=resources">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> hello@omnilearn.com</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-map-marker-alt"></i> New York, NY</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Omnilearn. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

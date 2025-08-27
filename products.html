@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Omnilearn</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Omnilearn</span>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="products.html" class="nav-link active">Products</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="products-hero">
+            <div class="container">
+                <div class="products-hero-content">
+                    <h1>Recommended Learning Products</h1>
+                    <p>Carefully curated tools, apps, and resources to enhance your educational journey and maximize learning outcomes</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="products-content">
+            <div class="container">
+                <div class="products-filters">
+                    <div class="search-container">
+                        <div class="search-box">
+                            <input type="text" id="search-input" placeholder="Search products...">
+                            <button id="search-btn"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                    <div class="category-filters">
+                        <button class="category-btn active" data-category="all">All Products</button>
+                        <button class="category-btn" data-category="software">Software & Apps</button>
+                        <button class="category-btn" data-category="hardware">Hardware</button>
+                        <button class="category-btn" data-category="platforms">Learning Platforms</button>
+                        <button class="category-btn" data-category="books">Books & Resources</button>
+                    </div>
+                </div>
+
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-badge">Editor's Choice</div>
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1484417894907-623942c8ee29?w=400&h=250&fit=crop" alt="Notion Workspace">
+                        </div>
+                        <div class="product-content">
+                            <span class="product-category">Software & Apps</span>
+                            <h3>Notion - All-in-One Workspace</h3>
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-score">4.8/5</span>
+                                <span class="reviews-count">(2,847 reviews)</span>
+                            </div>
+                            <p>Transform your productivity with Notion's powerful all-in-one workspace. Perfect for organizing notes, projects, databases, and collaborative work.</p>
+                            <div class="product-features">
+                                <span class="feature-tag">✓ Note-taking</span>
+                                <span class="feature-tag">✓ Project Management</span>
+                                <span class="feature-tag">✓ Collaboration</span>
+                                <span class="feature-tag">✓ Templates</span>
+                            </div>
+                            <div class="product-pricing">
+                                <span class="price">Free - $8/month</span>
+                                <span class="price-note">Personal use free forever</span>
+                            </div>
+                            <a href="product-1.html" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-badge">Best Value</div>
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=400&h=250&fit=crop" alt="iPad Pro">
+                        </div>
+                        <div class="product-content">
+                            <span class="product-category">Hardware</span>
+                            <h3>iPad Pro - Digital Learning Hub</h3>
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-score">4.9/5</span>
+                                <span class="reviews-count">(5,432 reviews)</span>
+                            </div>
+                            <p>The ultimate device for digital note-taking, reading, and multimedia learning. Combines the power of a laptop with the convenience of a tablet.</p>
+                            <div class="product-features">
+                                <span class="feature-tag">✓ Apple Pencil Support</span>
+                                <span class="feature-tag">✓ Retina Display</span>
+                                <span class="feature-tag">✓ Long Battery Life</span>
+                                <span class="feature-tag">✓ Educational Apps</span>
+                            </div>
+                            <div class="product-pricing">
+                                <span class="price">$799 - $2,099</span>
+                                <span class="price-note">Student discounts available</span>
+                            </div>
+                            <a href="product-2.html" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-badge">Popular</div>
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=400&h=250&fit=crop" alt="Coursera Plus">
+                        </div>
+                        <div class="product-content">
+                            <span class="product-category">Learning Platforms</span>
+                            <h3>Coursera Plus - Unlimited Learning</h3>
+                            <div class="product-rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="rating-score">4.6/5</span>
+                                <span class="reviews-count">(3,291 reviews)</span>
+                            </div>
+                            <p>Access thousands of courses from top universities and companies with Coursera Plus. Get certificates and specializations to boost your career.</p>
+                            <div class="product-features">
+                                <span class="feature-tag">✓ 7,000+ Courses</span>
+                                <span class="feature-tag">✓ University Partners</span>
+                                <span class="feature-tag">✓ Certificates</span>
+                                <span class="feature-tag">✓ Mobile Learning</span>
+                            </div>
+                            <div class="product-pricing">
+                                <span class="price">$59/month</span>
+                                <span class="price-note">7-day free trial</span>
+                            </div>
+                            <a href="product-3.html" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1607706189992-eae578626c86?w=400&h=250&fit=crop" alt="Anki Flashcards">
+                        </div>
+                        <div class="product-content">
+                            <span class="product-category">Software & Apps</span>
+                            <h3>Anki - Spaced Repetition System</h3>
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-score">4.7/5</span>
+                                <span class="reviews-count">(1,892 reviews)</span>
+                            </div>
+                            <p>Master any subject with Anki's powerful spaced repetition algorithm. Perfect for memorizing languages, medical terms, or any factual content.</p>
+                            <div class="product-features">
+                                <span class="feature-tag">✓ Spaced Repetition</span>
+                                <span class="feature-tag">✓ Customizable</span>
+                                <span class="feature-tag">✓ Sync Across Devices</span>
+                                <span class="feature-tag">✓ Community Decks</span>
+                            </div>
+                            <div class="product-pricing">
+                                <span class="price">Free</span>
+                                <span class="price-note">Mobile app $24.99</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?w=400&h=250&fit=crop" alt="VS Code">
+                        </div>
+                        <div class="product-content">
+                            <span class="product-category">Software & Apps</span>
+                            <h3>Visual Studio Code - Code Editor</h3>
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-score">4.8/5</span>
+                                <span class="reviews-count">(4,567 reviews)</span>
+                            </div>
+                            <p>The world's most popular code editor. Essential for anyone learning programming with excellent extensions and debugging capabilities.</p>
+                            <div class="product-features">
+                                <span class="feature-tag">✓ IntelliSense</span>
+                                <span class="feature-tag">✓ Extensions</span>
+                                <span class="feature-tag">✓ Git Integration</span>
+                                <span class="feature-tag">✓ Multi-language</span>
+                            </div>
+                            <div class="product-pricing">
+                                <span class="price">Free</span>
+                                <span class="price-note">Open source</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=250&fit=crop" alt="Make It Stick Book">
+                        </div>
+                        <div class="product-content">
+                            <span class="product-category">Books & Resources</span>
+                            <h3>Make It Stick - Learning Science Book</h3>
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-score">4.9/5</span>
+                                <span class="reviews-count">(2,156 reviews)</span>
+                            </div>
+                            <p>Discover the science of successful learning with this groundbreaking book. Learn evidence-based techniques that actually work.</p>
+                            <div class="product-features">
+                                <span class="feature-tag">✓ Research-Based</span>
+                                <span class="feature-tag">✓ Practical Tips</span>
+                                <span class="feature-tag">✓ Case Studies</span>
+                                <span class="feature-tag">✓ Easy to Read</span>
+                            </div>
+                            <div class="product-pricing">
+                                <span class="price">$13.99</span>
+                                <span class="price-note">Kindle $9.99</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1484704849700-f032a568e944?w=400&h=250&fit=crop" alt="Mechanical Keyboard">
+                        </div>
+                        <div class="product-content">
+                            <span class="product-category">Hardware</span>
+                            <h3>Mechanical Keyboard - Productivity Boost</h3>
+                            <div class="product-rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="rating-score">4.5/5</span>
+                                <span class="reviews-count">(987 reviews)</span>
+                            </div>
+                            <p>Enhance your typing experience with a quality mechanical keyboard. Perfect for long coding sessions and note-taking.</p>
+                            <div class="product-features">
+                                <span class="feature-tag">✓ Tactile Feedback</span>
+                                <span class="feature-tag">✓ Durability</span>
+                                <span class="feature-tag">✓ Customizable</span>
+                                <span class="feature-tag">✓ RGB Lighting</span>
+                            </div>
+                            <div class="product-pricing">
+                                <span class="price">$89 - $299</span>
+                                <span class="price-note">Various switch types</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1553028826-f4804a6dba3b?w=400&h=250&fit=crop" alt="Language Learning App">
+                        </div>
+                        <div class="product-content">
+                            <span class="product-category">Software & Apps</span>
+                            <h3>Duolingo Plus - Language Learning</h3>
+                            <div class="product-rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="rating-score">4.4/5</span>
+                                <span class="reviews-count">(6,789 reviews)</span>
+                            </div>
+                            <p>Learn new languages with the world's most popular language learning app. Gamified lessons make learning fun and engaging.</p>
+                            <div class="product-features">
+                                <span class="feature-tag">✓ 40+ Languages</span>
+                                <span class="feature-tag">✓ Gamification</span>
+                                <span class="feature-tag">✓ Speech Recognition</span>
+                                <span class="feature-tag">✓ Progress Tracking</span>
+                            </div>
+                            <div class="product-pricing">
+                                <span class="price">Free - $6.99/month</span>
+                                <span class="price-note">Ad-free premium version</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?w=400&h=250&fit=crop" alt="Blue Light Glasses">
+                        </div>
+                        <div class="product-content">
+                            <span class="product-category">Hardware</span>
+                            <h3>Blue Light Blocking Glasses</h3>
+                            <div class="product-rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="rating-score">4.3/5</span>
+                                <span class="reviews-count">(1,234 reviews)</span>
+                            </div>
+                            <p>Protect your eyes during long study sessions. Reduce eye strain and improve sleep quality with blue light filtering.</p>
+                            <div class="product-features">
+                                <span class="feature-tag">✓ Eye Protection</span>
+                                <span class="feature-tag">✓ Reduce Strain</span>
+                                <span class="feature-tag">✓ Better Sleep</span>
+                                <span class="feature-tag">✓ Stylish Design</span>
+                            </div>
+                            <div class="product-pricing">
+                                <span class="price">$19 - $89</span>
+                                <span class="price-note">Prescription available</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pagination">
+                    <!-- Pagination will be generated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-categories">
+            <div class="container">
+                <h2>Shop by Category</h2>
+                <div class="categories-grid">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Software & Apps</h3>
+                        <p>Digital tools and applications to enhance your learning experience</p>
+                        <span class="product-count">15+ products</span>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-tablet-alt"></i>
+                        </div>
+                        <h3>Hardware</h3>
+                        <p>Physical devices and equipment for optimal learning setups</p>
+                        <span class="product-count">12+ products</span>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Learning Platforms</h3>
+                        <p>Online courses and educational platforms for skill development</p>
+                        <span class="product-count">8+ platforms</span>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3>Books & Resources</h3>
+                        <p>Essential reading materials and reference resources</p>
+                        <span class="product-count">20+ books</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Omnilearn</span>
+                    </div>
+                    <p>Your gateway to the best educational resources and learning platforms on the web.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="blog.html?category=platforms">Platform Reviews</a></li>
+                        <li><a href="blog.html?category=tools">Learning Tools</a></li>
+                        <li><a href="blog.html?category=tips">Study Tips</a></li>
+                        <li><a href="blog.html?category=resources">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> hello@omnilearn.com</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-map-marker-alt"></i> New York, NY</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Omnilearn. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

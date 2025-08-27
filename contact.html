@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Omnilearn</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Omnilearn</span>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="products.html" class="nav-link">Products</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-hero">
+            <div class="container">
+                <div class="contact-hero-content">
+                    <h1>Get In Touch</h1>
+                    <p>Have a question, suggestion, or want to collaborate? We'd love to hear from you!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-form-section">
+                        <h2>Send us a Message</h2>
+                        <p>Whether you have questions about our reviews, want to suggest a product to test, or are interested in collaborating, we're here to help.</p>
+                        
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select a topic...</option>
+                                    <option value="product-suggestion">Product Suggestion</option>
+                                    <option value="review-feedback">Review Feedback</option>
+                                    <option value="collaboration">Collaboration Opportunity</option>
+                                    <option value="press-media">Press & Media</option>
+                                    <option value="technical-issue">Technical Issue</option>
+                                    <option value="general-inquiry">General Inquiry</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="company">Company/Organization (Optional)</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="6" placeholder="Tell us how we can help you..." required></textarea>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="newsletter" id="newsletter">
+                                    <span class="checkmark"></span>
+                                    Subscribe to our newsletter for the latest reviews and learning tips
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                <span class="btn-text">Send Message</span>
+                                <span class="btn-loading" style="display: none;">
+                                    <i class="fas fa-spinner fa-spin"></i> Sending...
+                                </span>
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="contact-info-section">
+                        <h2>Other Ways to Reach Us</h2>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="method-content">
+                                    <h3>Email Us</h3>
+                                    <p>For general inquiries</p>
+                                    <a href="mailto:hello@omnilearn.com">hello@omnilearn.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-laptop"></i>
+                                </div>
+                                <div class="method-content">
+                                    <h3>Product Reviews</h3>
+                                    <p>Suggest products to review</p>
+                                    <a href="mailto:reviews@omnilearn.com">reviews@omnilearn.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-handshake"></i>
+                                </div>
+                                <div class="method-content">
+                                    <h3>Partnerships</h3>
+                                    <p>Collaboration opportunities</p>
+                                    <a href="mailto:partnerships@omnilearn.com">partnerships@omnilearn.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-newspaper"></i>
+                                </div>
+                                <div class="method-content">
+                                    <h3>Press & Media</h3>
+                                    <p>Media inquiries and interviews</p>
+                                    <a href="mailto:press@omnilearn.com">press@omnilearn.com</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-section">
+                            <h3>Follow Us</h3>
+                            <p>Stay updated with our latest reviews and insights</p>
+                            <div class="social-links">
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-twitter"></i>
+                                    <span>Follow on Twitter</span>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-linkedin"></i>
+                                    <span>Connect on LinkedIn</span>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-youtube"></i>
+                                    <span>Subscribe on YouTube</span>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-facebook"></i>
+                                    <span>Like on Facebook</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="response-times">
+                            <h3>Response Times</h3>
+                            <div class="response-item">
+                                <div class="response-type">General Inquiries</div>
+                                <div class="response-time">24-48 hours</div>
+                            </div>
+                            <div class="response-item">
+                                <div class="response-type">Review Requests</div>
+                                <div class="response-time">3-5 business days</div>
+                            </div>
+                            <div class="response-item">
+                                <div class="response-type">Press & Media</div>
+                                <div class="response-time">Same business day</div>
+                            </div>
+                            <div class="response-item">
+                                <div class="response-type">Technical Issues</div>
+                                <div class="response-time">12-24 hours</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Quick answers to common questions</p>
+                </div>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>How do you choose which products to review?</h3>
+                        <p>We prioritize products based on user requests, market popularity, innovation, and potential impact on the learning experience. We also consider emerging technologies and tools that could benefit our community.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Do you accept paid reviews or sponsorships?</h3>
+                        <p>We maintain complete editorial independence. While we may receive free access to products for testing purposes, this never influences our reviews. All paid partnerships are clearly disclosed.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Can I contribute to Omnilearn as a guest writer?</h3>
+                        <p>Yes! We welcome contributions from educators, researchers, and experienced learners. Please reach out with your expertise and writing samples for consideration.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>How often do you update your reviews?</h3>
+                        <p>We review our content quarterly and update reviews when there are significant changes to products, pricing, or features. Major updates are noted at the top of each review.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Do you offer consulting services?</h3>
+                        <p>We provide consulting services for educational institutions and companies looking to implement learning technologies. Contact us to discuss your specific needs.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>How can I stay updated with new reviews?</h3>
+                        <p>Subscribe to our newsletter, follow us on social media, or check our blog regularly. We publish new content weekly and send newsletter updates monthly.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="office-info">
+            <div class="container">
+                <div class="office-content">
+                    <div class="office-details">
+                        <h2>Our Virtual Office</h2>
+                        <p>While we're a distributed team working remotely from around the world, our main operations are based in New York. We believe in the power of technology to connect people and facilitate learning, regardless of physical location.</p>
+                        
+                        <div class="office-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-globe"></i>
+                                <div>
+                                    <h4>Global Team</h4>
+                                    <p>Team members across 3 continents</p>
+                                </div>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <h4>24/7 Coverage</h4>
+                                    <p>Always someone available to help</p>
+                                </div>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-language"></i>
+                                <div>
+                                    <h4>Multi-lingual</h4>
+                                    <p>Support in English, Spanish, and Mandarin</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mailing-address">
+                            <h3>Mailing Address</h3>
+                            <address>
+                                Omnilearn<br>
+                                123 Learning Street, Suite 456<br>
+                                New York, NY 10001<br>
+                                United States
+                            </address>
+                        </div>
+                    </div>
+                    <div class="office-image">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=500&h=600&fit=crop" alt="Modern office workspace">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Omnilearn</span>
+                    </div>
+                    <p>Your gateway to the best educational resources and learning platforms on the web.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="blog.html?category=platforms">Platform Reviews</a></li>
+                        <li><a href="blog.html?category=tools">Learning Tools</a></li>
+                        <li><a href="blog.html?category=tips">Study Tips</a></li>
+                        <li><a href="blog.html?category=resources">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> hello@omnilearn.com</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-map-marker-alt"></i> New York, NY</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Omnilearn. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
