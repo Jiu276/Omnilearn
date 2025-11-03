@@ -150,6 +150,76 @@
     color: var(--text-secondary);
 }
 
+/* Enhanced Link Styles */
+.post-body a,
+.lead a,
+.post-subtitle a {
+    color: #2563eb;
+    font-weight: 600;
+    text-decoration: none;
+    background: linear-gradient(to right, #3b82f6, #2563eb);
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: all 0.3s ease;
+    padding: 0 0.15rem;
+    border-radius: 2px;
+    position: relative;
+}
+
+.post-body a:hover,
+.lead a:hover,
+.post-subtitle a:hover {
+    color: #1e40af;
+    background-size: 100% 2px;
+    background-color: rgba(59, 130, 246, 0.1);
+}
+
+.post-body a:active,
+.lead a:active,
+.post-subtitle a:active {
+    transform: translateY(1px);
+}
+
+/* Special styling for important links (Ticombo) */
+.post-body a[href*="ticombo"],
+.lead a[href*="ticombo"],
+.post-subtitle a[href*="ticombo"] {
+    color: #dc2626;
+    background: linear-gradient(to right, #ef4444, #dc2626);
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    font-weight: 700;
+    padding: 0.1rem 0.3rem;
+    border-radius: 3px;
+}
+
+.post-body a[href*="ticombo"]:hover,
+.lead a[href*="ticombo"]:hover,
+.post-subtitle a[href*="ticombo"]:hover {
+    color: #991b1b;
+    background-size: 100% 3px;
+    background-color: rgba(239, 68, 68, 0.15);
+    box-shadow: 0 2px 8px rgba(220, 38, 38, 0.2);
+}
+
+/* Link icon indicator */
+.post-body a[target="_blank"]::after,
+.lead a[target="_blank"]::after {
+    content: "↗";
+    font-size: 0.75em;
+    margin-left: 0.2em;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+.post-body a[target="_blank"]:hover::after,
+.lead a[target="_blank"]:hover::after {
+    opacity: 1;
+    transform: translate(2px, -2px);
+}
+
 /* Special Content Boxes */
 .highlight-box {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
@@ -173,6 +243,21 @@
 
 .highlight-box li {
     color: rgba(255, 255, 255, 0.9);
+}
+
+.highlight-box a {
+    color: #fef3c7;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 2px solid rgba(254, 243, 199, 0.5);
+    transition: all 0.3s ease;
+    padding: 0 0.2rem;
+}
+
+.highlight-box a:hover {
+    color: #fde68a;
+    border-bottom-color: #fde68a;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .question-box {
@@ -329,6 +414,32 @@
     color: var(--text-secondary);
 }
 
+.comparison-table a {
+    color: #2563eb;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+    padding: 0 0.1rem;
+}
+
+.comparison-table a:hover {
+    color: #1e40af;
+    border-bottom-color: #3b82f6;
+    background-color: rgba(59, 130, 246, 0.08);
+}
+
+.comparison-table a[href*="ticombo"] {
+    color: #dc2626;
+    font-weight: 700;
+}
+
+.comparison-table a[href*="ticombo"]:hover {
+    color: #991b1b;
+    border-bottom-color: #ef4444;
+    background-color: rgba(239, 68, 68, 0.08);
+}
+
 /* Tool and platform reviews */
 .tool-review,
 .platform-review {
@@ -364,6 +475,44 @@
 
 .tool-features {
     margin: 1rem 0;
+}
+
+.tool-features a,
+.stack-recommendation a,
+.conclusion-box a,
+.question-box a {
+    color: #2563eb;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+    padding: 0.05rem 0.2rem;
+    border-radius: 2px;
+}
+
+.tool-features a:hover,
+.stack-recommendation a:hover,
+.conclusion-box a:hover,
+.question-box a:hover {
+    color: #1e40af;
+    border-bottom-color: #3b82f6;
+    background-color: rgba(59, 130, 246, 0.1);
+}
+
+.tool-features a[href*="ticombo"],
+.stack-recommendation a[href*="ticombo"],
+.conclusion-box a[href*="ticombo"],
+.question-box a[href*="ticombo"] {
+    color: #dc2626;
+}
+
+.tool-features a[href*="ticombo"]:hover,
+.stack-recommendation a[href*="ticombo"]:hover,
+.conclusion-box a[href*="ticombo"]:hover,
+.question-box a[href*="ticombo"]:hover {
+    color: #991b1b;
+    border-bottom-color: #ef4444;
+    background-color: rgba(239, 68, 68, 0.1);
 }
 
 .pros-cons {
