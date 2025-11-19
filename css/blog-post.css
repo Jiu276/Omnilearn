@@ -188,13 +188,16 @@
     box-shadow: 0 2px 6px rgba(37, 99, 235, 0.2);
 }
 
-/* Special styling for important links (Spirit Halloween & Key Links) */
+/* Special styling for important links (Spirit Halloween, Ticombo, Miliboo & Key Links) */
 .post-body a[href*="spirithalloween"],
 .lead a[href*="spirithalloween"],
 .post-subtitle a[href*="spirithalloween"],
 .post-body a[href*="ticombo"],
 .lead a[href*="ticombo"],
-.post-subtitle a[href*="ticombo"] {
+.post-subtitle a[href*="ticombo"],
+.post-body a[href*="miliboo"],
+.lead a[href*="miliboo"],
+.post-subtitle a[href*="miliboo"] {
     color: #dc2626;
     background: linear-gradient(135deg, #f97316, #dc2626);
     background-size: 100% 4px;
@@ -221,7 +224,10 @@
 .post-subtitle a[href*="spirithalloween"]:hover,
 .post-body a[href*="ticombo"]:hover,
 .lead a[href*="ticombo"]:hover,
-.post-subtitle a[href*="ticombo"]:hover {
+.post-subtitle a[href*="ticombo"]:hover,
+.post-body a[href*="miliboo"]:hover,
+.lead a[href*="miliboo"]:hover,
+.post-subtitle a[href*="miliboo"]:hover {
     color: white;
     background: linear-gradient(135deg, #dc2626, #991b1b);
     background-size: 100% 100%;
